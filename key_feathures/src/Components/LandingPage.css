@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    background-color: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #777;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 60px;
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.br-logo {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 3rem;
+    display: inline-block;
+}
+
+/* Section Headers */
+.section-title {
+    padding: 30px 20px 10px;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+hr {
+    margin: 0 20px 20px;
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.project-card {
+    flex: 1 0 300px;
+    margin: 10px;
+    position: relative;
+    max-width: 350px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-label {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    font-size: 1rem;
+}
+
+/* About Section */
+.about-text {
+    padding: 0 20px 30px;
+    line-height: 1.8;
+}
+
+/* Team Section */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.team-card {
+    flex: 1 0 250px;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+}
+
+.team-name {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.team-title {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.contact-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #e5e5e5;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 20px;
+}
+
+.contact-section h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.send-btn {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+    background-color: #333;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .project-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+    
+    .team-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+    
+    .br-logo {
+        font-size: 2rem;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        flex: 0 0 100%;
+    }
+    
+    .team-card {
+        flex: 0 0 100%;
+    }
+    
+    .nav-links {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .br-logo {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .section-title {
+        padding: 20px 15px 5px;
+        font-size: 1.5rem;
+    }
+}
