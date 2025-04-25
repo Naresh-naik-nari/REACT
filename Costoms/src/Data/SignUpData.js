@@ -1,0 +1,20 @@
+export const SignUpData=[
+    {
+        username:"naresh",
+        password:"1234",
+        email:"asdf@gmail.com",
+        phone:"1234567890"
+    },
+    {
+        username:"shiva",
+        password:"1234",
+        email:"asdf@gmail.com",
+        phone:"1234567890"
+    },
+    {
+        username:"srinu",
+        password:"1234",
+        email:"asdf@gmail.com",
+        phone:"1234567890"
+    },
+]

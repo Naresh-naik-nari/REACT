@@ -1,0 +1,37 @@
+export const studentData=[
+    {
+        id:"1",
+        name:"naresh",
+        age:"23",
+        email:"naresh@gmail.com",
+        phone:"12345678"
+    },
+    {
+        id:"2",
+        name:"ravi",
+        age:"23",
+        email:"ravi@gmail.com",
+        phone:"12345678"
+    },
+    {
+        id:"3",
+        name:"raju",
+        age:"23",
+        email:"raju@gmail.com",
+        phone:"12345678"
+    },
+    {
+        id:"4",
+        name:"shiva",
+        age:"23",
+        email:"shiva@gmail.com",
+        phone:"12345678"
+    },
+    {
+        id:"5",
+        name:"raju",
+        age:"23",
+        email:"raju@gmail.com",
+        phone:"12345678"
+    }
+]

@@ -1,0 +1,22 @@
+export const SubjectData=[
+    {
+        id:"1",
+        Subjectname:"Maths"
+    },
+    {
+        id:"2",
+        Subjectname:"science"
+    },
+    {
+        id:"3",
+        Subjectname:"Teluge"
+    },
+    {
+        id:"4",
+        Subjectname:"Hindi"
+    },
+    {
+        id:"1",
+        Subjectname:"js"
+    },
+]

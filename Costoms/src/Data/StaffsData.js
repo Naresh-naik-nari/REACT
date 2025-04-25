@@ -1,0 +1,32 @@
+export const StaffsData=[
+    {
+        id:"1",
+        staffname:"naresh",
+        role:"trainer",
+        sallary:"50k"
+    },
+    {
+        id:"2",
+        staffname:"shiva",
+        role:"trainer",
+        sallary:"50k"
+    },
+    {
+        id:"3",
+        staffname:"Ravi",
+        role:"trainer",
+        sallary:"50k"
+    },
+    {
+        id:"4",
+        staffname:"Raju",
+        role:"trainer",
+        sallary:"50k"
+    },
+    {
+        id:"5",
+        staffname:"srinu",
+        role:"trainer",
+        sallary:"50k"
+    },
+]

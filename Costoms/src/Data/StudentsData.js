@@ -1,0 +1,32 @@
+export const StudentsData=[
+    {
+        id:"1",
+        name:"naresh",
+        age:"23",
+        class:"PG"
+    },
+    {
+        id:"2",
+        name:"shiva",
+        age:"23",
+        class:"PG"
+    },
+    {
+        id:"3",
+        name:"Ravi",
+        age:"23",
+        class:"PG"
+    },
+    {
+        id:"4",
+        name:"srinu",
+        age:"23",
+        class:"PG"
+    },
+    {
+        id:"5",
+        name:"Raju",
+        age:"23",
+        class:"PG"
+    },
+]
