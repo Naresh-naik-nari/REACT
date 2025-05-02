@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "naresh",
+            "class": "30R"
+        }
+    ],
+    "Profiles": [
+        {
+            "id": 1,
+            "name": "naresh",
+            "class": "30R"
+        }
+    ]
+}
