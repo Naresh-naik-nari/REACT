@@ -5,7 +5,8 @@ class ComponeneDidUpdate extends Component {
         super()
         this.state = {
             count: 1,
-            product: null
+            product: null,
+            name: ""
         }
     }
     componentDidMount() {
@@ -13,6 +14,18 @@ class ComponeneDidUpdate extends Component {
             .then((res) => res.json())
             .then((data) => this.setState({ product: data }))
     }
+    HandleClick = () => {
+        this.setState({ count: this.state.count + 1 })
+        this.setState((prevState) => ({ count: prevState.count + 1 }))
+        this.setState({name:"Hello"})
+    }
+    // baching 
+    // HandleClick=()=>{5
+    //     this.setState((prevState)=>({count:prevState.count+1}))
+    //     this.setState((prevState)=>({count:prevState.count+1}))
+    //     this.setState({name:"namerh"})
+    // }
+
     componentDidUpdate(preProps, prevState) {
         if (prevState.count !== this.state.count) {
             fetch(`https://fakestoreapi.com/products/${this.state.count}`)
@@ -25,9 +38,9 @@ class ComponeneDidUpdate extends Component {
         return (
             <>
                 <h2>count:{this.state.count}</h2>
-                <button onClick={() => { this.setState({ count: this.state.count + 1 }) }}>Add</button>
+                <button onClick={this.HandleClick}>Add</button>
                 {this.state.product && this.state.product.title}
-
+                <h1>{this.state.name}</h1>
             </>
         )
     }
