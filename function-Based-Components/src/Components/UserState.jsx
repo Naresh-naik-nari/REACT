@@ -1,17 +1,15 @@
 import { useState } from "react";
 
-function Practice() {
+function UserState() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [submit, setSubmit] = useState([]);
 
   const HandleSubmit = (e) => {
-    e.preventDefault(); //  prevent form refresh
-    setSubmit((prevSubmit) => [
-      ...prevSubmit,
-      { name: name, email: email } //  add new entry
+    e.preventDefault(); 
+    setSubmit((prevSubmit) => [...prevSubmit,{ name: name, email: email } 
     ]);
-    setName(""); //  clear input fields
+    setName("");
     setEmail("");
   };
 
@@ -25,6 +23,7 @@ function Practice() {
           name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
         />
         <br />
         <label htmlFor="email">Enter Email</label>
@@ -34,6 +33,7 @@ function Practice() {
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <br />
         <button type="submit">Add</button>
@@ -42,7 +42,7 @@ function Practice() {
       <h3>Submitted Data:</h3>
       <ul>
         {submit.map((item, index) => (
-          <li key={index}>
+          <li>
             {item.name} - {item.email}
           </li>
         ))}
@@ -51,4 +51,4 @@ function Practice() {
   );
 }
 
-export default Practice;
+export default UserState;
